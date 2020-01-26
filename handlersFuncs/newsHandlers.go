@@ -1,4 +1,4 @@
-package handlers
+package handlersFuncs
 
 import (
 	"encoding/json"
@@ -11,7 +11,6 @@ import (
 )
 
 func CreateNewsEndpoint(response http.ResponseWriter, request *http.Request) {
-	response.Header().Set("Access-Control-Allow-Origin", "*")
 
 	response.Header().Set("content-type", "application/json")
 	var new models.News
@@ -21,7 +20,6 @@ func CreateNewsEndpoint(response http.ResponseWriter, request *http.Request) {
 }
 
 func UpdateNewsEndpoint(response http.ResponseWriter, request *http.Request) {
-	response.Header().Set("Access-Control-Allow-Origin", "*")
 
 	response.Header().Set("content-type", "application/json")
 	var new models.News
@@ -31,7 +29,6 @@ func UpdateNewsEndpoint(response http.ResponseWriter, request *http.Request) {
 }
 
 func GetAllNewsEndpoint(response http.ResponseWriter, request *http.Request) {
-	response.Header().Set("Access-Control-Allow-Origin", "*")
 
 	response.Header().Set("content-type", "application/json")
 
@@ -45,7 +42,6 @@ func GetAllNewsEndpoint(response http.ResponseWriter, request *http.Request) {
 }
 
 func GetNewsEndpoint(response http.ResponseWriter, request *http.Request) {
-	response.Header().Set("Access-Control-Allow-Origin", "*")
 
 	response.Header().Set("content-type", "application/json")
 	id := mux.Vars(request)["id"]
