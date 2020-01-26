@@ -10,4 +10,8 @@ to run the project in dev mode you need to have go v 1.10+ installed
  
  ## no installation run 
   if you want to run the server without installing anything 
- run `./back-end` if you are in linux or open `back-end.exe` if you are in windows it will run on `localhost:8000`
+ run `./back-end-linux` if you are in linux 
+ run `./back-end-macos` if you are in linux 
+ open `back-end.exe` if you are in windows 
+ 
+ it will run on `localhost:8000`
